@@ -83,8 +83,8 @@ h1{
 }
 
 .text-home {
-    position: relative;
-    top: 30%;
+    position: absolute;
+    padding-top: 15vh;
 }
 
 .text-home h1{
