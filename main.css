@@ -326,11 +326,12 @@ footer p{
     }
     
     .grid{
-        display: block;
+        display: grid;
+        grid-auto-flow: dense;
     }
     
     #skills{
-        height:1300px;
+        height:900px;
     }
     .text-skills{
         position: relative;
