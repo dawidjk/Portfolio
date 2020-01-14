@@ -8,8 +8,8 @@
 }
 
 body,html {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 ul{
@@ -82,7 +82,7 @@ h1{
 
 #home{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #151616;
     color: #fff;
     text-align: center;
@@ -299,16 +299,17 @@ footer p{
         display: none;
     }
     .text-home{
-           top: 40%;
+        top: 10vh;
+        width: 100vw;
     }
     .text-home h1{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     .text-home p{
         float: none;
         text-align: right;
-        width: 100%;
+        width: 40vw;
         font-size: 1em;
         padding-left:11em; 
     }
