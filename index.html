@@ -18,7 +18,7 @@
     <!-- Navigation Bar -->
     <header>
         <nav id="nav">
-            <div class="menu">
+            <div id="menu" class="menu">
                 <ul>
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
@@ -36,15 +36,15 @@
 
         <section id="home">
             <div id="particles-js">
-            <div class="text-home" style="z-index: 999;">
-                <h1 class="wow animated fadeInRight">Hi there!<br />I'm Dawid Kluszczynski.</h1>
-                <div class="wow padding animated fadeIn">
-                    <p class="indic animated">I'm a Computer Science and Statistics student at UIUC and I make cool
-                        stuff smart.</p>
-                    <a href="#" class="arrow-down"></a>
+                <div class="text-home" style="z-index: 999;">
+                    <h1 class="wow animated fadeInRight">Hi there!<br />I'm Dawid Kluszczynski.</h1>
+                    <div class="wow padding animated fadeIn">
+                        <p class="indic animated">I'm a Computer Science and Statistics student at UIUC and I make cool
+                            stuff smart.</p>
+                        <a href="#" class="arrow-down"></a>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
 
         <!-- About Me Section -->
@@ -147,12 +147,12 @@
                 <a href="" class="wow button animated fadeIn">Submit</a>
             </div>
         </section>
-        
+
         <!-- particles.js container -->
 
-    <!-- scripts -->
-    <script src="js/lib/particles.min.js"></script>
-    <script src="js/lib/app.js"></script>
+        <!-- scripts -->
+        <script src="js/lib/particles.min.js"></script>
+        <script src="js/lib/app.js"></script>
 
     </main>
 
@@ -173,6 +173,19 @@
     <script type="text/javascript" src="wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+
+    <script type="text/javascript">
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("menu").style.top = "0";
+            } else {
+                document.getElementById("menu").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     </script>
 </body>
 

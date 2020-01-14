@@ -57,6 +57,12 @@ h1{
     z-index: 1;
 }
 
+#menu {
+    position: fixed;
+    top: 0; /* Stay on top */
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+}
+
 .menu ul, .menu ul li{
     display: inline;
 }
@@ -84,7 +90,7 @@ h1{
 
 .text-home {
     position: absolute;
-    padding-top: 15vh;
+    padding-top: 30vh;
 }
 
 .text-home h1{
