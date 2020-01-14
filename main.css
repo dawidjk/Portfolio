@@ -120,7 +120,7 @@ h1{
 /* About */
 
 #about{
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
     text-align: center;
     background-color: #f2f2f2;
@@ -319,7 +319,7 @@ footer p{
     }
     
     #about{
-        height:1300px;
+        height:1400px;
     }
     
     .grid{
