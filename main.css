@@ -298,6 +298,9 @@ footer p{
     .menu{
         display: none;
     }
+    .home {
+        width: 50vw;
+    }
     .text-home{
         top: 10vh;
         width: 100vw;
@@ -312,6 +315,10 @@ footer p{
         width: 40vw;
         font-size: 1em;
         padding-left:11em; 
+    }
+
+    #about{
+        height:1300px;
     }
     
     .text-about p{
