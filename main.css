@@ -186,7 +186,7 @@ h1{
 /* About */
 
 #about{
-    height: 120vh;
+    height: 60rem;
     width: 100vw;
     text-align: center;
     background-color: #f2f2f2;
@@ -209,12 +209,6 @@ h1{
     line-height: 1.5em;
 }
 
-@media screen and (min-height: 2000px) {
-    #about {
-        height: 150vh;
-    }
-}
-
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
     #about {
@@ -228,6 +222,22 @@ h1{
         color:#151616;
         font-size: 1.5em;
         padding: 2rem 10rem 5rem;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    #about {
+        height: 65rem;
+        text-align: center;
+        background-color: #f2f2f2;
+        color:#151616;
+    }
+
+    .text-about p{
+        color:#151616;
+        font-size: 1.5em;
+        padding: 2rem 10rem 3rem;
         line-height: 1.5em;
     }
 }
@@ -350,19 +360,13 @@ h1{
     line-height: 1.8em;
 }
 
-@media screen and (min-height: 2000px) {
-    .text-skills h3{
-        font-size:1.5em;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     #skills{
         height: 45rem;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     .text-skills h3{
         font-size:1.5em;
     }
@@ -412,12 +416,6 @@ h1{
     padding: 0 20px 10px 20px;
 }
 
-@media screen and (min-height: 2000px) {
-    #projects{
-        height: 150vh;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     #projects{
         height: 65vh;
@@ -429,7 +427,7 @@ h1{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     #projects{
         height: 80vh;
     }
