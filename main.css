@@ -186,7 +186,7 @@ h1{
 /* About */
 
 #about{
-    height: 60rem;
+    height: 120vh;
     width: 100vw;
     text-align: center;
     background-color: #f2f2f2;
