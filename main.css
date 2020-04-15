@@ -45,6 +45,7 @@ h1{
 #nav{
     background: #151616;
     color: #fff;
+    width: 100vw;
 }
 
 .menu {
@@ -78,6 +79,12 @@ h1{
     font-size: 1.5em; 
 }
 
+@media screen and (max-width: 1024px) {
+    .menu{
+        display: none;
+    }
+}
+
 /* Home */
 
 #home{
@@ -105,7 +112,7 @@ h1{
     text-align: right;
     width: 45%;
     float: right;
-    padding-right:0.5em;
+    padding-right:0.25rem;
 }
 .text-home .padding{
     padding-right: 13em;
@@ -114,13 +121,72 @@ h1{
 
 .text-home .indic{
     border-right: 2px solid #fff;
+}
 
+@media screen and (max-width: 768px) {
+    .text-home h1{
+        font-size: 5rem;
+        padding-bottom: 0.2em;
+        animation-delay: 0.25s;
+    }
+
+    .text-home p{
+        font-size: 1.5rem;
+        color: #ccc;
+        text-align: right;
+        width: 45%;
+        float: right;
+    }
+
+    .text-home .padding{
+        padding-right: 9rem;
+        animation-delay: 1.5s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-home h1{
+        font-size: 3rem;
+        padding-bottom: 0.2em;
+        animation-delay: 0.25s;
+        padding-top: 11rem;
+    }
+
+    .text-home p{
+        font-size: 1.2rem;
+        color: #ccc;
+        text-align: right;
+        width: 70%;
+        float: right;
+        margin-right: 1rem;
+    }
+
+    .text-home .padding{
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .text-home h1{
+        font-size: 2rem;
+        padding-top: 10rem;
+    }
+
+    .text-home p{
+        font-size: 1rem;
+        width: 70%;
+        margin-right: 1rem;
+    }
+
+    .text-home .padding{
+        padding-right: 4rem;
+    }
 }
 
 /* About */
 
 #about{
-    height: 130vh;
+    height: 60rem;
     width: 100vw;
     text-align: center;
     background-color: #f2f2f2;
@@ -129,15 +195,84 @@ h1{
 
 .text-about{
     position: relative;
-    top: 10%;
+    top: 5rem;
 }
 
+.text-about h1{
+    padding-top: 1rem;
+}
 
 .text-about p{
     color:#151616;
     font-size: 1.5em;
-    padding: 2em 15em;
+    padding: 1.5em 15em;
     line-height: 1.5em;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1024px) {
+    #about {
+        height: 60rem;
+        text-align: center;
+        background-color: #f2f2f2;
+        color:#151616;
+    }
+
+    .text-about p{
+        color:#151616;
+        font-size: 1.5em;
+        padding: 2rem 10rem 5rem;
+        line-height: 1.5em;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 768px) {
+    #about {
+        height: 70rem;
+        text-align: center;
+        background-color: #f2f2f2;
+        color:#151616;
+    }
+
+    .text-about p{
+        color:#151616;
+        font-size: 1.5em;
+        padding: 2rem 10rem 4rem;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        height: 85rem;
+        text-align: center;
+        background-color: #f2f2f2;
+        color:#151616;
+    }
+
+    .text-about p{
+        color:#151616;
+        font-size: 1.5em;
+        padding: 2rem 2rem 2rem;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    #about {
+        height: 105rem;
+        text-align: center;
+        background-color: #f2f2f2;
+        color:#151616;
+    }
+
+    .text-about p{
+        color:#151616;
+        font-size: 1.5em;
+        padding: 2rem 3rem 5rem;
+        line-height: 1.5em;
+    }
 }
 
 /* Skills */
@@ -147,19 +282,17 @@ h1{
     width: 100vw;
     text-align: center;
     color:#151616;
-
 }
 
 .text-skills{
     position: relative;
-    top: 10%;
+    top: 5rem;
 }
 
 .text-skills h3{
     font-size:2em;
     padding-bottom: 2em;
     line-height: 1.5em;
-
 }
 
 .grid{
@@ -211,14 +344,43 @@ h1{
     line-height: 1.8em;
 }
 
+@media screen and (max-width: 1024px) {
+    #skills{
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-skills h3{
+        font-size:1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #skills{
+        height: 35rem;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2,2fr);
+        padding-top: 2em;
+    }
+
+    .inline{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        padding-top: 1em;
+    }
+}
+
 /* Projects */
 
 #projects{
     height: 130vh;
+    width: 100vw;
     text-align: center;
     background-color: #f2f2f2;
     color:#151616;
-
 }
 
 .text-projects{
@@ -238,6 +400,59 @@ h1{
     padding: 0 20px 10px 20px;
 }
 
+@media screen and (max-width: 1024px) {
+    #projects{
+        height: 65vh;
+    }
+
+    .text-projects img{
+        height: 300px;
+        padding: 0 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #projects{
+        height: 80vh;
+    }
+
+    .text-projects img{
+        height: 250px;
+        padding: 0 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #skills{
+        height: 85rem;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2,2fr);
+        padding-top: 2em;
+    }
+
+    .inline{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        padding-top: 1em;
+    }
+
+    #projects{
+        height: 65rem;
+    }
+
+    .text-projects{
+        top: 3rem;
+        padding: 0 1rem;
+    }
+
+    .text-projects img{
+        height: 200px;
+        padding: 0 20px 10px 20px;
+    }
+}
+
 /* Contact */
 
 #contact{
@@ -254,6 +469,7 @@ h1{
     color:#151616;
 }
 .text-contact h1{
+    margin: 0 1rem;
     padding-bottom: 50px;
 }
 #form input{
@@ -275,6 +491,40 @@ h1{
 
 .text-contact a{
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    #contact{
+        height: 45rem;
+    }
+
+    #form input{
+        width: 50%;
+        height: 50px;
+    }
+
+    #form textarea{
+        margin-top:-50px;
+        width: 50%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact{
+        height: 47rem;
+    }
+
+    #form input{
+        width: 80%;
+        height: 50px;
+    }
+
+    #form textarea{
+        margin-top:-50px;
+        width: 80%;
+        height: 150px;
+    }
 }
 
 /* footer */
@@ -299,6 +549,14 @@ footer p{
     padding-left: 10px;
 }
 
+@media screen and (max-width: 600px) {
+    footer p{
+        font-size: 1.5rem;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
 /* animations */
 
 .indic{
@@ -316,78 +574,47 @@ footer p{
     }
 }
 
-/* media queries */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
 
-@media(max-width:769px){
-    .menu{
-        display: none;
-    }
-    .text-home{
-        top: 30vh;
-    }
-    .text-home h1{
-        font-size: 1.5em;
-    }
-    
-    .text-home p{
-        float: none;
-        text-align: right;
-        width: 100%;
-        font-size: 1em;
-        padding-left:15vh; 
-        padding-top: 10vh;
-    }
-    
-    .text-about p{
-        padding: 2em;
-    }
-    
-    #about{
-        height:1450px;
-    }
-    
-    .grid{
-        display: grid;
-    }
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 
-    .inline{
-        display: inline-block;
-    }
-    
-    #skills{
-        height:900px;
-    }
-    .text-skills{
-        position: relative;
-        top:5%;
-    }
-    .text-skills h3{
-        font-size: 1.3em;
-        margin-top: 40px;
-    }
-    
-    .inline p{
-        margin-bottom: 5vh;
-        top: 0px;
-    }
-    
-    .text-contact h1{
-        font-size: 2.5em;
-    }
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
 
-    #form input{
-        width: 80%;
-    }
-    
-    #form textarea{
-        width: 80%;
-    }
-    
-    #projects{
-        height: 1200px;
-    }
-    
-    #projects img{
-        height: 200px;
-    }
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }

@@ -104,7 +104,7 @@
                 <h1 class="wow animated fadeInUp">Tech I've Worked With</h1>
                 <div class="wow grid animated fadeInUp">
                     <div>
-                        <h3>ML/Data Science</h3>
+                        <h3>Data Science</h3>
                         <img src="imgs/python.png" alt="">
                         <p>Python</p>
                         <br><br>
@@ -112,6 +112,9 @@
                             <br><br> -->
                         <img src="imgs/tensorflow.png" alt="">
                         <p>Tensorflow</p>
+                        <br><br>
+                        <img src="imgs/opencv.png" alt="">
+                        <p>OpenCV</p>
                         <br><br>
                     </div>
                     <div>
@@ -131,16 +134,19 @@
                         <img src="imgs/angular.png" alt="">
                         <p>Angular</p>
                         <br><br>
+                        <img src="imgs/react.png" alt="">
+                        <p>React</p>
+                        <br><br>
                         <img src="imgs/node.png" alt="">
                         <p>Node.js</p>
-                        <br><br>
-                        <img src="imgs/express.png" alt="">
-                        <p>Express</p>
                     </div>
                     <div>
                         <h3>Mobile</h3>
                         <img src="imgs/android.png" alt="">
                         <p>Android</p>
+                        <br><br>
+                        <img src="imgs/swift.png" alt="">
+                        <p>Swift</p>
                         <br><br>
                         <img src="imgs/flutter.png" alt="">
                         <p>Flutter</p>
@@ -184,9 +190,10 @@
                     <input type="email" placeholder="Email" name="reply_to">
                     <br><br>
                     <textarea name="message_html" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br>
-                    <button type="submit" class="wow button animated fadeIn">Submit</button>
+                    <button type="submit" onclick="showSnackbar()" class="wow button animated fadeIn">Submit</button>
                 </form>
             </div>
+            <div id="snackbar">Message Sent!</div>
         </section>
 
         <!-- particles.js container -->
@@ -225,6 +232,12 @@
                 document.getElementById("menu").style.top = "-100px";
             }
             prevScrollpos = currentScrollPos;
+        }
+
+        function showSnackbar() {
+          var x = document.getElementById("snackbar");
+          x.className = "show";
+          setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
     </script>
 </body>
