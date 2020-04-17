@@ -97,13 +97,13 @@ h1{
 
 .text-home {
     position: absolute;
-    padding-top: 30vh;
+    bottom: 5vh;
     right: 5vw;
 }
 
 .text-home h1{
-    font-size: 7em;
-    padding-bottom: 0.2em;
+    font-size: 6rem;
+    padding-bottom: 10%;
     animation-delay: 0.25s;
 }
 
@@ -126,31 +126,25 @@ h1{
 
 @media screen and (max-width: 768px) {
     .text-home h1{
-        font-size: 5rem;
-        padding-bottom: 0.2em;
-        animation-delay: 0.25s;
+        font-size: 4rem;
+        padding-bottom: 33%;
     }
 
     .text-home p{
         font-size: 1.5rem;
-        color: #ccc;
-        text-align: right;
-        width: 45%;
-        float: right;
+        width: 40%;
     }
 
     .text-home .padding{
-        padding-right: 9rem;
+        padding-right: 1vw;
         animation-delay: 1.5s;
     }
 }
 
 @media screen and (max-width: 600px) {
     .text-home h1{
-        font-size: 3rem;
-        padding-bottom: 0.2em;
-        animation-delay: 0.25s;
-        padding-top: 11rem;
+        font-size: 2.5rem;
+        padding-bottom: 50%;
     }
 
     .text-home p{
@@ -163,26 +157,10 @@ h1{
     }
 
     .text-home .padding{
-        padding-right: 3rem;
+        padding-right: 1vw;
     }
 }
 
-@media screen and (max-height: 650px) {
-    .text-home h1{
-        font-size: 2rem;
-        padding-top: 10rem;
-    }
-
-    .text-home p{
-        font-size: 1rem;
-        width: 70%;
-        margin-right: 1rem;
-    }
-
-    .text-home .padding{
-        padding-right: 4rem;
-    }
-}
 
 /* About */
 
