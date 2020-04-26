@@ -10,6 +10,7 @@
 body,html {
     width: 100vw;
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 ul{
@@ -567,6 +568,27 @@ footer p{
     to {
         border-right-color: transparent;
     }
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #444;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
