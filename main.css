@@ -166,7 +166,7 @@ h1{
 /* About */
 
 #about{
-    height: 60rem;
+    height: 75rem;
     width: 100vw;
     text-align: center;
     background-color: #f2f2f2;
@@ -189,10 +189,9 @@ h1{
     line-height: 1.5em;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
     #about {
-        height: 60rem;
+        height: 75rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -208,7 +207,7 @@ h1{
 
 @media screen and (max-width: 834px) {
     #about {
-        height: 65rem;
+        height: 90rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -225,7 +224,7 @@ h1{
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 768px) {
     #about {
-        height: 70rem;
+        height: 95rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -241,7 +240,7 @@ h1{
 
 @media screen and (max-width: 600px) {
     #about {
-        height: 85rem;
+        height: 120rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -257,7 +256,7 @@ h1{
 
 @media screen and (max-height: 650px) {
     #about {
-        height: 105rem;
+        height: 160rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
