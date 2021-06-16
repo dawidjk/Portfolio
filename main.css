@@ -166,7 +166,7 @@ h1{
 /* About */
 
 #about{
-    height: 80rem;
+    height: 85rem;
     width: 100vw;
     text-align: center;
     background-color: #f2f2f2;
@@ -191,7 +191,7 @@ h1{
 
 @media screen and (max-width: 1024px) {
     #about {
-        height: 75rem;
+        height: 80rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -207,7 +207,7 @@ h1{
 
 @media screen and (max-width: 834px) {
     #about {
-        height: 90rem;
+        height: 95rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -224,7 +224,7 @@ h1{
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 768px) {
     #about {
-        height: 95rem;
+        height: 100rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -240,7 +240,7 @@ h1{
 
 @media screen and (max-width: 600px) {
     #about {
-        height: 120rem;
+        height: 125rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
@@ -256,7 +256,7 @@ h1{
 
 @media screen and (max-height: 650px) {
     #about {
-        height: 160rem;
+        height: 165rem;
         text-align: center;
         background-color: #f2f2f2;
         color:#151616;
