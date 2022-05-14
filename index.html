@@ -37,7 +37,7 @@
             document.getElementById('form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 emailjs.sendForm('gmail', 'template_bbIwBIu2', this);
-                document.contact_form.reset(); 
+                document.contact_form.reset();
                 showSnackbar();
             });
         }
@@ -59,15 +59,18 @@
             </div>
         </nav>
     </header>
+
     <!-- Main Page Secton -->
-    <!-- <div id="particles-js"></div> -->
     <main>
         <!-- Full Screen Main Section -->
 
         <section id="home">
             <div id="particles-js">
                 <div class="text-home">
-                    <h1 class="wow animated fadeInLeft">Hi there!<br />I'm Dawid Kluszczynski.</h1>
+                    <h1 class="wow animated fadeInLeft">
+                        Hi there!<br />
+                        I'm Dawid Kluszczynski.
+                    </h1>
                     <div class="wow padding animated fadeIn">
                         <p class="indic animated">I'm a Computer Science and Statistics student at UIUC and I make cool
                             stuff smart.</p>
@@ -87,11 +90,19 @@
                     Currently I am interning at Two Sigma, improving the derivatives trading platform!
                     This program is just starting, so I'll update you after the summer ;)
                     <br /><br />
-                    This past semester, I joined interviewing.io as a part time employee - what a great experience that was. I've performed various awesome tasks: from optimizing our anonymous scheduling algorithm to increasing conversion rates by optimizing our onboarding process and marketing flows.
+                    This past semester, I joined interviewing.io as a part time employee - what a great experience that
+                    was. I've performed various awesome tasks: from optimizing our anonymous scheduling algorithm to
+                    increasing conversion rates by optimizing our onboarding process and marketing flows.
                     <br /><br />
-                    Previously, I interned at Dataminr where I created an awesome tool for managers to ensure that all information needed for creating breaking news alerts was always being utilized (ask me about it, it's more involved than what I can fit here)! I also interned at Caterpillar where I aided in developing algorithms for aiding C level executives in where to invest in the company. Additionally, I worked on some novel ML training techniques that are only possible with CAT's super detailed models!
+                    Previously, I interned at Dataminr where I created an awesome tool for managers to ensure that all
+                    information needed for creating breaking news alerts was always being utilized (ask me about it,
+                    it's more involved than what I can fit here)! I also interned at Caterpillar where I aided in
+                    developing algorithms for aiding C level executives in where to invest in the company. Additionally,
+                    I worked on some novel ML training techniques that are only possible with CAT's super detailed
+                    models!
                     <br /><br />
-                <a class="button wow animated fadeInUp" href="resume/Dawid_Kluszczynski.pdf" target="_blank">Resume</a>
+                    <a class="button wow animated fadeInUp" href="resume/Dawid_Kluszczynski.pdf"
+                        target="_blank">Resume</a>
             </div>
         </section>
 
@@ -166,8 +177,8 @@
                         <p>Intelligent Snakes</p>
                     </div>
                     <div>
-                        <a href="https://github.com/dawidjk/flappy-ml" target="_blank"><img
-                                src="imgs/flappy.gif" alt=""></a>
+                        <a href="https://github.com/dawidjk/flappy-ml" target="_blank"><img src="imgs/flappy.gif"
+                                alt=""></a>
                         <p>Flappy ML</p>
                     </div>
                 </div>
@@ -187,7 +198,8 @@
                     <br>
                     <input type="email" placeholder="Email" name="reply_to" required>
                     <br><br>
-                    <textarea name="message_html" id="" cols="30" rows="10" required placeholder="Your Message"></textarea><br>
+                    <textarea name="message_html" id="" cols="30" rows="10" required
+                        placeholder="Your Message"></textarea><br>
                     <button type="submit" class="wow button animated fadeIn">Submit</button>
                 </form>
             </div>
@@ -233,9 +245,9 @@
         }
 
         function showSnackbar() {
-          var x = document.getElementById("snackbar");
-          x.className = "show";
-          setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
         }
     </script>
 </body>

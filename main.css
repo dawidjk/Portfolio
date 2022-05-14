@@ -101,12 +101,13 @@ h1{
     bottom: 5vh;
     right: 5vw;
 }
-
 .text-home h1{
     font-size: 6rem;
     padding-bottom: 10%;
     animation-delay: 0.25s;
+    text-align: right;
 }
+
 
 .text-home p{
     font-size: 2em;
